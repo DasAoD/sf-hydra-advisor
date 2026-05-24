@@ -43,7 +43,7 @@ Für signierte Release-Builds wird ein Signing Key benötigt (siehe Tauri-Dokume
 ## Technologie
 
 - [Tauri v2](https://v2.tauri.app/) – Desktop-Framework (Rust + WebView)
-- [sf-api](https://github.com/the-marenga/sf-api) – Shakes & Fidget API
+- [sf-api](https://github.com/the-marenga/sf-api) von [marenga](https://github.com/the-marenga) – Shakes & Fidget API
 - Unity Asset Bundle Decoder (C++ Crunch + Rust DXT5)
 
 ---
