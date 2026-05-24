@@ -48,6 +48,18 @@ Für signierte Release-Builds wird ein Signing Key benötigt (siehe Tauri-Dokume
 
 ---
 
+## Mitwirkende
+
+Dieses Projekt wurde in Zusammenarbeit mit [Claude](https://claude.ai) (Sonnet 4.6) von [Anthropic](https://anthropic.com) entwickelt und iterativ ausgebaut.  
+Der überwiegende Teil des Codes, der Architektur und der Dokumentation wurde durch KI generiert und gemeinsam verfeinert.
+
+| Rolle | Person / Tool |
+|---|---|
+| Projektidee, Anforderungen & Tests | [DasAoD](https://github.com/DasAoD) |
+| Code, Architektur, Dokumentation | Claude (Anthropic) |
+
+---
+
 ## Lizenz
 
 [MIT](LICENSE)
