@@ -1,0 +1,60 @@
+{
+    "$schema":  "https://schema.tauri.app/config/2",
+    "productName":  "SF Hydra Advisor",
+    "version":  "0.1.0",
+    "identifier":  "de.uliana.sf-hydra-advisor",
+    "build":  {
+                  "frontendDist":  "../dist"
+              },
+    "app":  {
+                "windows":  [
+                                {
+                                    "title":  "SF Hydra Advisor",
+                                    "width":  1050,
+                                    "height":  820,
+                                    "resizable":  true,
+                                    "fullscreen":  false
+                                }
+                            ],
+                "security":  {
+                                 "csp":  null,
+                                 "assetProtocol": {
+                                     "enable": true,
+                                     "scope": {
+                                         "allow": ["**"],
+                                         "deny":  []
+                                     }
+                                 }
+                             },
+                "withGlobalTauri":  true
+            },
+    "bundle":  {
+                   "active":  true,
+                   "targets":  "all",
+                   "icon":  [
+                                "icons/32x32.png",
+                                "icons/128x128.png",
+                                "icons/128x128@2x.png",
+                                "icons/icon.icns",
+                                "icons/icon.ico"
+                            ],
+                   "android":  {
+                                   "debugApplicationIdSuffix":  ".debug"
+                               },
+                   "createUpdaterArtifacts": true,
+                   "windows": {
+                       "nsis": {
+                           "installerHooks": "nsis/uninstall-hook.nsi"
+                       }
+                   }
+               },
+    "plugins": {
+        "updater": {
+            "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDhENjEzQzgxMzZBMTA1RDYKUldUV0JhRTJnVHhoamJMc01uTWg5K1d1L3N3YUtFdGZ4RXZpVExIZmQzcnpRMTQvWU5BODVyVVUK",
+            "endpoints": [
+                "https://github.com/DasAoD/sf-hydra-advisor/releases/latest/download/latest.json"
+            ],
+            "dialog": true
+        }
+    }
+}

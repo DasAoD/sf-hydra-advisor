@@ -1,0 +1,25 @@
+# Build-Artefakte
+src-tauri/target/
+
+# Pet-Bilder (Spiel-Assets, zur Laufzeit extrahiert - nicht ins Repo)
+dist/assets/pets/
+src-tauri/assets/pets/
+
+# Tauri generierte Dateien
+src-tauri/gen/
+
+# Überflüssige Dateien
+src-tauri/Cargo_additions.toml
+src-tauri/lib.rs
+
+# Windows
+Thumbs.db
+Desktop.ini
+*.pdb
+
+# Tauri Signing Keys (privat, nie ins Repo!)
+*.key
+*.key.pub
+build.ps1
+*.bak*
+latest.json
