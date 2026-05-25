@@ -1,8 +1,8 @@
 {
     "$schema":  "https://schema.tauri.app/config/2",
-    "productName":  "SF Hydra Advisor",
-    "version":  "0.2.1",
-    "identifier":  "de.uliana.sf-hydra-advisor",
+    "productName":  "sf-hydra-advisor",
+    "version":  "0.3.0",
+    "identifier":  "sf-hydra-advisor",
     "build":  {
                   "frontendDist":  "../dist"
               },
