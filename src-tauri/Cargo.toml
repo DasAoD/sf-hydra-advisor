@@ -1,6 +1,6 @@
 [package]
 name = "sf-hydra-advisor-gui"
-version = "0.2.0"
+version = "0.2.1"
 description = "SF Hydra Pet Advisor"
 authors = ["DasAoD"]
 edition = "2021"
