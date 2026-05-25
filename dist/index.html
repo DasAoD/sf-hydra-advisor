@@ -297,6 +297,7 @@
   <h2>Empfehlung</h2>
   <div id="result-content"></div>
   <div class="btn-row">
+    <button class="secondary" onclick="reloadGuild()">&#x21bb; Gilde neu laden</button>
     <button class="secondary" onclick="resetHydra()">Andere Hydra-Klasse</button>
     <button class="secondary" onclick="resetGuild()">Andere Gilde / Charakter</button>
   </div>
@@ -552,6 +553,35 @@ function resetHydra() {
   document.querySelectorAll('.class-btn').forEach(b => b.classList.remove('selected'));
   selectedClass = 0;
   document.getElementById('btn-recommend').disabled = true;
+}
+
+async function reloadGuild() {
+  // Nur Gildendaten neu laden (Pet + Hydra-Leben), Charakter bleibt
+  const idx = document.getElementById('char-select') 
+    ? document.getElementById('char-select').value 
+    : 0;
+  try {
+    const res = await invoke('load_guild', { charIndex: parseInt(idx) });
+    // Ergebnis-Sektion ausblenden, Mitglieder-Button zurücksetzen
+    document.getElementById('section-result').classList.add('hidden');
+    document.getElementById('btn-load-members').disabled = false;
+    document.getElementById('progress-bar-wrap').classList.add('hidden');
+    document.getElementById('progress-label').textContent = '';
+    // Pet + Hydra-Leben aktualisieren
+    document.getElementById('pet-name').textContent = res.pet_name + ' (' + res.pet_element + ')';
+    document.getElementById('pet-class').textContent = res.pet_class;
+    document.getElementById('hydra-hp').textContent = 'Hydra-Leben: ' + res.hydra_hp + '%';
+    const fill = Math.max(0, Math.min(100, res.hydra_hp));
+    document.getElementById('hydra-fill').style.width = fill + '%';
+    document.getElementById('hydra-fill').style.background = fill > 50 ? '#e94560' : fill > 25 ? '#f5a623' : '#4caf50';
+    const petImg = document.getElementById('pet-img');
+    if (petImg && res.active_pet_id) {
+      const id = String(res.active_pet_id).padStart(3, '0');
+      petImg.src = convertFileSrc(petsBasePath + '/pet_' + id + '.png');
+    }
+  } catch(e) {
+    alert('Fehler beim Neu laden: ' + e);
+  }
 }
 
 function resetGuild() {
