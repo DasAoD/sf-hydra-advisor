@@ -20,6 +20,8 @@ Desktop-App für Shakes & Fidget Gildenleiter – empfiehlt das optimale Gildenp
 
 ## Installation
 
+> ℹ️ Die Installation erfordert **keine Administratorrechte**. Das Programm wird im Benutzerverzeichnis installiert (`%LOCALAPPDATA%\SF Hydra Advisor\`).
+
 1. Installer (`SF.Hydra.Advisor_x.x.x_x64-setup.exe`) von der [Releases-Seite](https://github.com/DasAoD/sf-hydra-advisor/releases/latest) herunterladen
 2. Installer ausführen
 3. Beim ersten Start werden die Pet-Bilder automatisch heruntergeladen (~10-30 Sekunden)
