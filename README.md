@@ -20,7 +20,9 @@ Desktop-App für Shakes & Fidget Gildenleiter – empfiehlt das optimale Gildenp
 
 ## Installation
 
-> ℹ️ Die Installation erfordert **keine Administratorrechte**. Bei einem Update von einer älteren Version bitte zuerst die alte Version deinstallieren. Das Programm wird im Benutzerverzeichnis installiert (`%LOCALAPPDATA%\SF Hydra Advisor\`).
+> ℹ️ Die Installation erfordert **keine Administratorrechte**.
+> 
+> ⚠️ **Windows SmartScreen** kann beim ersten Start eine Warnung anzeigen ("Unbekannter Herausgeber"). Dies ist normal für unsignierte Apps. Einfach auf **"Weitere Informationen" → "Trotzdem ausführen"** klicken. Bei einem Update von einer älteren Version bitte zuerst die alte Version deinstallieren. Das Programm wird im Benutzerverzeichnis installiert (`%LOCALAPPDATA%\SF Hydra Advisor\`).
 
 1. Installer (`SF.Hydra.Advisor_x.x.x_x64-setup.exe`) von der [Releases-Seite](https://github.com/DasAoD/sf-hydra-advisor/releases/latest) herunterladen
 2. Installer ausführen
