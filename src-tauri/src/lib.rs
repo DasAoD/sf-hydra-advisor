@@ -971,10 +971,16 @@ pub fn run() {
             if let Some(window) = app.get_webview_window("main") {
                 let _ = window.set_title(&format!("SF Hydra Advisor v{}", version));
             }
-            if cfg!(debug_assertions) {
+// Logging: Debug=Info, Release=Warn
+            {
+                let level = if cfg!(debug_assertions) {
+                    log::LevelFilter::Info
+                } else {
+                    log::LevelFilter::Warn
+                };
                 app.handle().plugin(
                     tauri_plugin_log::Builder::default()
-                        .level(log::LevelFilter::Info)
+                        .level(level)
                         .build(),
                 )?;
             }
