@@ -25,7 +25,7 @@ Desktop-App für Shakes & Fidget Gildenleiter – empfiehlt das optimale Gildenp
 > ⚠️ **Windows SmartScreen** kann beim ersten Start eine Warnung anzeigen ("Unbekannter Herausgeber"). Dies ist normal für unsignierte Apps. Einfach auf **"Weitere Informationen" → "Trotzdem ausführen"** klicken. Bei einem Update von einer älteren Version bitte zuerst die alte Version deinstallieren. Das Programm wird im Benutzerverzeichnis installiert (`%LOCALAPPDATA%\SF Hydra Advisor\`).
 
 1. Installer (`SF.Hydra.Advisor_x.x.x_x64-setup.exe`) von der [Releases-Seite](https://github.com/DasAoD/sf-hydra-advisor/releases/latest) herunterladen
-2. Installer ausführen
+2. Installer ausføhren
 3. Beim ersten Start werden die Pet-Bilder automatisch heruntergeladen (~10-30 Sekunden)
 
 ---
@@ -59,8 +59,8 @@ Der überwiegende Teil des Codes, der Architektur und der Dokumentation wurde du
 
 | Rolle | Person / Tool |
 |---|---|
-| Projektidee, Anforderungen & Tests | [DasAoD](https://github.com/DasAoD) |
-| Code, Architektur, Dokumentation | Claude (Anthropic) |
+| Projektidee, Anforderungen & Tests | [DasAoD](https://git.uliana.de/DasAoD) |
+| Code, Architektur, Dokumentation | [Claude](https://git.uliana.de/Claude) (Anthropic) |
 
 ---
 
