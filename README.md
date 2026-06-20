@@ -1,5 +1,9 @@
 # SF Hydra Pet Advisor
 
+> **📌 Mirror-Hinweis:** Dieses Repository ist ein automatischer Spiegel.
+> Die primäre Entwicklung findet auf **[git.uliana.de/DasAoD/sf-hydra-advisor](https://git.uliana.de/DasAoD/sf-hydra-advisor)** statt.
+ > Issues und Pull Requests bitte dort öffnen.
+
 Desktop-App für Shakes & Fidget Gildenleiter – empfiehlt das optimale Gildenpet gegen die aktuelle Hydra-Klasse, basierend auf den Attributen der Gildenmitglieder.
 
 > I have no programming background and built this entirely with AI support.  
